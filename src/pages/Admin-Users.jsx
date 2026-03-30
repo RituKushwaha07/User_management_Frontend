@@ -15,7 +15,7 @@ export const AdminUsers = () => {
 
     const getAllUsersData = async () => {
         try {
-            const response = await fetch("http://localhost:5000/api/admin/users", {
+            const response = await fetch(`${process.env.VITE_APP_URI_API}/api/admin/users`, {
                 method: "GET",
                 headers: {
                     Authorization: authorizationToken,

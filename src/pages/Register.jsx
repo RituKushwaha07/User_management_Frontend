@@ -5,7 +5,7 @@ import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
 
 
-const URL = "http://localhost:5000/api/auth/register";
+const URL = `${process.env.VITE_APP_URI_API}/api/auth/register`;
 
 
 

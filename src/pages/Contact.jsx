@@ -46,7 +46,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/api/auth/contact", {
+      const response = await fetch(`${process.env.VITE_APP_URI_API}/api/auth/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
