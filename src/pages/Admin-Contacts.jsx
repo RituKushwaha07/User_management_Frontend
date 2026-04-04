@@ -37,7 +37,7 @@ export const AdminContacts = () => {
 
     const deleteContactById = async (id) => {
         try {
-            const response = await fetch(`${process.env.VITE_APP_URI_API}/api/admin/contacts/delete/${id}`, {
+            const response = await fetch(`${import.meta.env.VITE_APP_URI_API}/api/admin/contacts/delete/${id}`, {
                 method: 'DELETE',
                 headers: {
                     Authorization: authorizationToken,

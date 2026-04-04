@@ -5,7 +5,7 @@ import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
 
 
-const URL = `${process.env.VITE_APP_URI_API}/api/auth/login`;
+const URL = `${import.meta.env.VITE_APP_URI_API}/api/auth/login`;
 
 // const URL = `${API}/api/auth/login`;
 
